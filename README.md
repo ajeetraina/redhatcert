@@ -12,7 +12,8 @@
  
  Or you can directly add docker-ee.repo( from the repository) under /etc/yum.repos.d/ & and then run the below command:
  
- ```yum update```
- ```yum install docker-ee``
+ ```yum update
+ 
+ yum install docker-ee```
  
  
