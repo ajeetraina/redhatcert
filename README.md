@@ -6,17 +6,18 @@
 
 ## Install Docker 17.05 Enterprise Edition on Red Hat Enterprise Linux 7.3
 
- Browse to Docker Store - https://store.docker.com/editions/enterprise/docker-ee-server-rhel
+- Register to Docker Store. In case you have DockerHub ID, login through the same credential.
+
+ - Browse to Docker Store - https://store.docker.com/editions/enterprise/docker-ee-server-rhel
  
- Follow the steps under https://docs.docker.com/engine/installation/linux/docker-ee/rhel/
+ - Follow the steps under https://docs.docker.com/engine/installation/linux/docker-ee/rhel/
  
- Or you can directly add docker-ee.repo( from the repository) under /etc/yum.repos.d/ & and then run the below command:
+ - Or you can directly add docker-ee.repo( from the repository) under /etc/yum.repos.d/ & and then run the below command:
  
- ```yum update
- ```
+ ```yum update```
  
- ```yum install docker-ee
- ```
+ 
+ ```yum install docker-ee```
  
  ## Start the Docker Daemon
  
