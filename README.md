@@ -10,6 +10,9 @@
  
  Follow the steps under https://docs.docker.com/engine/installation/linux/docker-ee/rhel/#uninstall-old-versions
  
- Or you can directly add [[docker.ee]https://github.com/ajeetraina/redhatcert/blob/master/docker-ee.repo]] under /etc/yum.repos.d/
+ Or you can directly add docker-ee.repo( from the repository) under /etc/yum.repos.d/ & and then run the below command:
+ 
+ ```yum update```
+ ```yum install docker-ee``
  
  
