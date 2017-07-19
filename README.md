@@ -1,7 +1,7 @@
 
-## How to run Red Hat Certification Test Suite Inside Docker container
+# How to run Red Hat Certification Test Suite Inside Docker container
 
-# On Test Manager:
+## On Test Manager:
 
 
 # Install Docker 17.05 Enterprise Edition on Red Hat Enterprise Linux 7.3
