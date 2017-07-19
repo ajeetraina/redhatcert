@@ -21,38 +21,32 @@
  
  ## Start the Docker Daemon
  
-```systemctl restart docker
-```
+```systemctl restart docker```
 
 ## verify if Docker is up and running
 
-```docker version
-```
+```docker version```
 
-```docker info
-```
+```docker info```
 
 
 ## Pulling Docker Image for Red Hat certification Suite 
 
-```docker pull ajeetraina/redhatcert
-```
+```docker pull ajeetraina/redhatcert```
 
 ## Running Docker Container
 
-```docker run --privileged -ti -e container=docker -v /sys/fs/cgroup:/sys/fs/cgroup ajeetraina/redhatcert /usr/sbin/init
-```
+```docker run --privileged -ti -e container=docker -v /sys/fs/cgroup:/sys/fs/cgroup ajeetraina/redhatcert /usr/sbin/init```
 
 Keep the terminal open. Open up the new terminal and follow the next step:
 
 ### Running the HWCERT Service
 
-```docker exec -it <container-id> rhcert-backend server start
-```
+```docker exec -it <container-id> rhcert-backend server start```
 
 ## Ensure that rhcert services are up and running using the below command in new terminal
 
-```docker exec -it <container-id> rhcert-backend server status
+```docker exec -it <container-id> rhcert-backend server status```
 
 
 
