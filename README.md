@@ -90,11 +90,9 @@ Keep the terminal open. Open up the new terminal and follow the next step:
 
 ### Running the HWCERT Service
 
-```docker exec -it <container-id> rhcert-backend server start```
+```docker exec -it <container-id> rhcert-backend register --server <IP of Test Manager```
 
-## Ensure that rhcert services are up and running using the below command in new terminal
 
-```docker exec -it <container-id> rhcert-backend server status```
 
 
  
