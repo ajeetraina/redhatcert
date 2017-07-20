@@ -4,7 +4,7 @@
 ## On Test Manager:
 
 
-# Install Docker 17.05 Enterprise Edition on Red Hat Enterprise Linux 7.3
+### Install Docker 17.05 Enterprise Edition on Red Hat Enterprise Linux 7.3
 
 - Register to Docker Store. In case you have DockerHub ID, login through the same credential.
 
