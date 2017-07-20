@@ -19,28 +19,28 @@
  
  ```yum install docker-ee```
  
- # Start the Docker Daemon
+ ### Start the Docker Daemon
  
 ```systemctl restart docker```
 
-# verify if Docker is up and running
+### Verify if Docker is up and running
 
 ```docker version```
 
 ```docker info```
 
 
-# Running Docker Container
+### Running Docker Container
 
 ```docker run --privileged --net=host -ti -e container=docker -v /sys/fs/cgroup:/sys/fs/cgroup ajeetraina/redhatcert /usr/sbin/init```
 
 Keep the terminal open. Open up the new terminal and follow the next step:
 
-# Running the HWCERT Service
+### Running the HWCERT Service
 
 ```docker exec -it <container-id> rhcert-backend server start```
 
-# Ensure that rhcert services are up and running using the below command in new terminal
+### Ensure that rhcert services are up and running using the below command in new terminal
 
 ```docker exec -it <container-id> rhcert-backend server status```
 
@@ -48,17 +48,14 @@ Keep the terminal open. Open up the new terminal and follow the next step:
 ## On System Under Test:
 
 
-# Pulling Docker Image for Red Hat certification Suite 
 
-```docker pull ajeetraina/redhatcert```
-
-# Running Docker Container
+### Running Docker Container
 
 ```docker run --privileged --net=host -ti -e container=docker -v /sys/fs/cgroup:/sys/fs/cgroup ajeetraina/redhatcert /usr/sbin/init```
 
 Keep the terminal open. Open up the new terminal and follow the next step:
 
-# Running the HWCERT Service
+### Registering the HWCERT TM Server
 
 ```docker exec -it <container-id> rhcert-backend register --server <IP of Test Manager```
 
