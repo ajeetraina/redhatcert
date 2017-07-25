@@ -3,7 +3,7 @@ version: "3.3"
 services:
 
    rhcertification:
-     image: ajeetraina/rhcertification
+     image: ajeetraina/redhatcert
      network_mode: "host"
      volumes:
        - /sys/fs/cgroup:/sys/fs/cgroup
