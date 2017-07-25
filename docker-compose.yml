@@ -5,6 +5,8 @@ services:
    rhcertification:
      image: ajeetraina/redhatcert
      network_mode: "host"
+     environment:
+      - container:docker
      volumes:
        - /sys/fs/cgroup:/sys/fs/cgroup
      privileged: true
